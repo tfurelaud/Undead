@@ -1,0 +1,41 @@
+Doc qui résume l'utilisation de SDL2
+
+pour un tuto de SDL (anglais):
+http://www.sdltutorials.com/sdl-tutorial-basics
+
+
+    - Fichier <model.c>
+    
+Fonctions   x) init():
+            Fonction qui va charger toute les données utiles à l'affichage (textures, maps, images,
+            pnj...
+
+            x) render():
+            Fonction qui gère tout le rendu de ce qui apparaît à l'écran.
+            NE GERE PAS la manipulation de donnée: se contente uniquement d'afficher en fonction des
+            données qu'on lui donne.
+            
+            x) process():
+            (Fonction qui s'occupe aussi de la gestion des événements d'entrée??? Touche, souris ect...)
+            Fonction qui va s'occuper de mettre à jour toutes les données: mouvement de personnage,
+            vie qui baisse... 
+            
+            x) clean():
+            Efface toute les ressources chargées, et assure une sortie propre du programme.
+            
+            
+            
+    - Fonction demo.c
+    
+Inclure des .h en plus: <SDL.h> pour la bibliothèque SDL, <SDL_image.h> pour le chargement de textures, <SDL_ttf.h> pour l'utilisation de police TTF.
+
+Les images, police ect... utilisées sont définie avec des #define
+
+Structure Env_t {} -> Structure qui enregistre toutes les informations liées à notre environnement à affiché variables de positions, image, police, textures...)
+
+Fonction Env *init():
+
+    malloc de Env
+    
+    
+
