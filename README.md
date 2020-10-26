@@ -1,8 +1,8 @@
 # Undead
 
-For this game you'll need : sdl2 dev \n
+For this game you'll need : sdl2 dev 
 
-To compile and execute the game :\n
+To compile and execute the game :
 
 mkdir build\n
 cd build\n
